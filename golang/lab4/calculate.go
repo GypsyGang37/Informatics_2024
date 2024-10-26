@@ -1,23 +1,26 @@
-package lab4
+package lab4 //Грубо говоря ваша созданная папка
 
 import (
-	"fmt"
 	"math"
 )
 
-func Calculator(x, a, b float64) float64 {
-	y := math.Pow(a*x+b, 1.0/3.0) / math.Pow(math.Log(x), 2.0)
+func Calculator(a, b, x float64) float64 {
+	var y float64 = math.Asin(math.Pow(x, a)) + math.Acos(math.Pow(x, b))
 	return y
 }
 
-func TaskA(a, b, Xn, Xk, delX float64) {
+func TaskA(a, b, Xn, Xk, delX float64) []float64 {
+	var Calc []float64
 	for x := Xn; x <= Xk; x += delX {
-		fmt.Println(Calculator(a, b, x))
+		Calc = append(Calc, Calculator(a, b, x))
 	}
+	return Calc
 }
 
-func TaskB(a, b float64, x [5]float64) {
+func TaskB(a float64, b float64, x [5]float64) []float64 {
+	var Calc []float64
 	for _, value := range x {
-		fmt.Println(Calculator(a, b, value))
+		Calc = append(Calc, Calculator(a, b, value))
 	}
+	return Calc
 }
