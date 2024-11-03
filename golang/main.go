@@ -1,12 +1,12 @@
 package main
 
-import "isuct.ru/informatics2022/lab4"
+import (
+	"fmt"
 
-const a float64 = 1.35
-const b float64 = 0.98
+	"isuct.ru/informatics2022/lab4"
+)
 
 func main() {
-	lab4.TaskA(b, a, 1.14, 4.24, 0.62)               //Значения из таблицы
-	var s = [5]float64{0.35, 1.28, 3.51, 5.21, 4.16} //Тут тоже значения из таблицы
-	lab4.TaskB(b, a, s)
+	lab4.Run4()
+	fmt.Println("Artem Bobkov")
 }
