@@ -8,7 +8,10 @@ import (
 )
 
 func main() {
+lab6
 	lab4.Run4()
 	lab6.RunLab6()
 	fmt.Println("Artem Bobkov")
+	fmt.Println("Бобков Артём Андреевич")
+Bobkov_Artem
 }
