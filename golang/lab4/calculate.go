@@ -27,7 +27,6 @@ func TaskB(a float64, b float64, x [5]float64) []float64 {
 }
 
 func Run4() {
-
 	a := 2.0
 	b := 3.0
 
