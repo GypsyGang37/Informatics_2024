@@ -26,7 +26,7 @@ func TaskB(a float64, b float64, x [5]float64) []float64 {
 	return Calc
 }
 
-func Run4() {
+func RunLab4() {
 
 	a := 2.0
 	b := 3.0
