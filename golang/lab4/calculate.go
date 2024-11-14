@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func Calculator(a, b, x float64) float64 {
+func Calculate(a, b, x float64) float64 {
 	y := math.Pow(a*x+b, 1.0/3.0) / math.Pow(math.Log(x), 2.0)
 	return y
 }
